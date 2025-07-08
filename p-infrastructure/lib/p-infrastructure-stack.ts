@@ -28,7 +28,7 @@ export class PortfolioAmplifyStack extends cdk.Stack {
             },
           },
           artifacts: {
-            baseDirectory: '.',  // ✅ your index.html is in root folder
+            baseDirectory: 'Portfolio-Website',  // ✅ your index.html is in root folder
             files: ['**/*'],
           },
         },
