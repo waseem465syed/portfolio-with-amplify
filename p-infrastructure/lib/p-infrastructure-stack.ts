@@ -22,7 +22,9 @@ export class PortfolioAmplifyStack extends cdk.Stack {
           phases: {
             preBuild: {
               commands: [
-                'echo "Navigating to Portfolio-Website..."',
+                'echo "Checking for non-code changes..."',
+                // Detect if only markdown/docs were changed
+                'git diff --name-only $CODEBUILD_RESOLVED_SOURCE_VERSION | grep -vqE "\\.(js|html|css|json|ts|jsx|tsx)$" && echo "Skipping build due to non-code changes." && exit 0 || echo "Code changes detected. Proceeding..."',
                 'cd Portfolio-Website',
               ],
             },
