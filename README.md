@@ -19,7 +19,12 @@ portfolio-with-amplify/
 
 ## 🔐 GitHub Token Storage
 
-Your GitHub personal access token must be securely stored in AWS Secrets Manager with the key: `my-github-token`.
+Your GitHub personal access token must be securely stored in AWS Secrets Manager with the key: `your-token`.
+check if you already have any stored secret in aws secrets manager : 
+```
+aws secretsmanager list-secrets
+```
+Generate new secret in CLI : aws secretsmanager create-secret --name my-github-token --description "github token for amplify" --secret-string "your github secret token"
 
 ## 🛠️ CDK Stack Includes:
 
