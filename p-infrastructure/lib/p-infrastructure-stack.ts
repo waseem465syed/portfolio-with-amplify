@@ -16,20 +16,28 @@ export class PortfolioAmplifyStack extends cdk.Stack {
       }),
 
       // ✅ No build commands needed for static HTML
-      buildSpec: codebuild.BuildSpec.fromObjectToYaml({
+     buildSpec: codebuild.BuildSpec.fromObjectToYaml({
         version: '1.0',
         frontend: {
           phases: {
             preBuild: {
-              commands: ['echo "No pre-build needed for static site"'],
+              commands: [
+                'echo "Navigating to Portfolio-Website..."',
+                'cd Portfolio-Website',
+              ],
             },
             build: {
-              commands: ['echo "No build step needed"'],
+              commands: [
+                'echo "No build steps needed for static HTML"',
+              ],
             },
           },
           artifacts: {
-            baseDirectory: 'Portfolio-Website',  // ✅ your index.html is in root folder
+            baseDirectory: 'Portfolio-Website',
             files: ['**/*'],
+          },
+          cache: {
+            paths: [],
           },
         },
       }),
@@ -42,12 +50,12 @@ export class PortfolioAmplifyStack extends cdk.Stack {
 
     // Optional custom domain setup and route 53
   
-    amplifyApp.addDomain('waseem-syed.com', {
-         subDomains: [
-           { branch: mainBranch, prefix: '' },
-           { branch: mainBranch, prefix: 'www' },
-         ],
-       });
+    //amplifyApp.addDomain('waseem-syed.com', {
+      //   subDomains: [
+         //  { branch: mainBranch, prefix: '' },
+          // { branch: mainBranch, prefix: 'www' },
+        // ],
+      // });
   }
 }
 
