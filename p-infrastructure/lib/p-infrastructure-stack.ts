@@ -63,6 +63,7 @@ export class PortfolioAmplifyStack extends cdk.Stack {
           prefix: 'www', // subdomain (www.waseem-syed.click)
         },
       ],
+       enableAutoSubdomain: true, 
     });
   }
 }
