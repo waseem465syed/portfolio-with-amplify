@@ -49,13 +49,19 @@ export class PortfolioAmplifyStack extends cdk.Stack {
     });
 
     // Optional custom domain setup and route 53
-  
-    //amplifyApp.addDomain('waseem-syed.com', {
-      //   subDomains: [
-         //  { branch: mainBranch, prefix: '' },
-          // { branch: mainBranch, prefix: 'www' },
-        // ],
-      // });
+  // ✅ Add Custom Domain
+    amplifyApp.addDomain('waseem-syed.click', {
+      subDomains: [
+        {
+          branch: mainBranch,
+          prefix: '', // root domain (waseem-syed.click)
+        },
+        {
+          branch: mainBranch,
+          prefix: 'www', // subdomain (www.waseem-syed.click)
+        },
+      ],
+    });
   }
 }
 
