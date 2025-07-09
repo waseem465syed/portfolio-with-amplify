@@ -24,7 +24,10 @@ check if you already have any stored secret in aws secrets manager :
 ```
 aws secretsmanager list-secrets
 ```
-Generate new secret in CLI : aws secretsmanager create-secret --name my-github-token --description "github token for amplify" --secret-string "your github secret token"
+Generate new secret in CLI : 
+```
+aws secretsmanager create-secret --name my-github-token --description "github token for amplify" --secret-string "your-github-secret-token"
+```
 
 ## 🛠️ CDK Stack Includes:
 
