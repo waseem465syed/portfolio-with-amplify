@@ -48,4 +48,4 @@ cdk deploy
 
 - https://waseem-syed.click
 - https://www.waseem-syed.click
--
+- https://medium.com/@waseem.syed465
