@@ -136,18 +136,18 @@ portfolio-website/
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
-- 🎞️ Full-screen image slider with dynamic text animations  
-- 🧑‍💻 Categorized portfolio (Projects, Certificates, Blogs)  
-- 📚 “About Me” section aligned with AWS CloudOps journey  
-- ✉️ Direct contact button (mailto integration)  
-- ⚡ Lightweight, responsive design optimized for mobile  
-- 🔄 Automated CI/CD deployment via AWS Amplify  
+- Full-screen image slider with dynamic text animations  
+- Categorized portfolio (Projects, Certificates, Blogs)  
+- “About Me” section aligned with AWS CloudOps journey  
+- Direct contact button (mailto integration)  
+- Lightweight, responsive design optimized for mobile  
+- Automated CI/CD deployment via AWS Amplify  
 
 ---
 
-## ⚙️ Related AWS Services
+## Related AWS Services
 
 | Service | Purpose |
 |----------|----------|
@@ -160,7 +160,7 @@ portfolio-website/
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Waseem Syed**  
 - 🌐 [Portfolio Website](https://waseem-syed.click)  
@@ -170,12 +170,10 @@ portfolio-website/
 
 ---
 
-## 🪪 License
+## License
 
 This project is licensed under the **MIT License** — feel free to fork and customize for learning or personal use.
 
 ---
 
-## ⭐ Acknowledgements
 
-Special thanks to the **AWS Cloud Community**, **Amazon mentors**, and open-source developers whose tools made this project possible.
